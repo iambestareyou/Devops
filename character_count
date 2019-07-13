@@ -1,0 +1,11 @@
+c_count = {}
+while True:
+	c = input("Enter a character/exit: ")
+	if c == 'exit': break
+	if c not in c_count.keys():
+		c_count[c] = 1
+	else:
+		c_count[c] += 1
+
+for k, v in c_count.items():
+	print("{} occured {} times!\n".format(k, v))
